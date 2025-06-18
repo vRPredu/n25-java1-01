@@ -1,0 +1,27 @@
+package br.com.senaisp.bauru.aula05;
+import java.util.Scanner;
+
+import br.com.senaisp.bauru.aula05.Exercicio01;
+public class exercicio01 {
+
+	public static void main(String[] args) {
+		// Usando o scanner para ler um arquivo de texto
+		Scanner sca = new Scanner(
+				Exercicio01.class.getResourceAsStream("arquivo.txt"));
+		string linha=sc.nextLine();// pegando o cabeçalho
+		sca.useDelimiter(";");
+				while(sc.hasNextLine()) {
+		while (sca.hasNext()) {
+			System.out.println(sca.next() + "/t/t");
+			sca.close();
+			
+			
+			
+		}
+		
+			
+			
+		}
+	}
+
+}
