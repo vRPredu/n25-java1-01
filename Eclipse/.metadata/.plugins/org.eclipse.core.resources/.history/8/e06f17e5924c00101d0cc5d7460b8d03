@@ -1,0 +1,30 @@
+package br.com.senaisp.bauru.aula05;
+import java.util.Scanner;
+public class exercicio01 {
+
+	public static void main(String[] args) {
+		// Usando o Scanner para ler um arquivo texto
+		Scanner sc = new Scanner(exercicio01.class.getResourceAsStream("Arquivo.txt"));
+		String linha = sc.nextLine(); //pegando cabeçalho
+		Scanner sca = new Scanner (linha);
+		sca.useDelimiter(";");
+		//Imprimindo cabeçalho
+		while (sca.hasNext()) {
+			System.out.print(sca.next() + "/t\t"); // \t = tab
+		}
+		System.out.println(); //pulando a linha
+		sca.close(); //fechando o scanner de apoio
+		while(sc.hasNextLine()) { 
+			linha = sc.nextLine();
+			sca = new Scanner (linha);
+			sca.useDelimiter(";");
+			//imprimindo o nome
+			System.out.print(sca.next()+"/t");
+			//Imprimindo a idade
+			System.out.println(sca.nextInt()+"/t");
+			
+			
+			
+		}
+	}
+}

@@ -1,4 +1,5 @@
 package br.com.senaisp.bauru.aula05;
+import java.util.Locale;
 import java.util.Scanner;
 public class exercicio01 {
 
@@ -10,14 +11,25 @@ public class exercicio01 {
 		sca.useDelimiter(";");
 		//Imprimindo cabeçalho
 		while (sca.hasNext()) {
-			System.out.print(sca.next() + "t\t"); // \t = tab
+			System.out.print(sca.next() + "\t\t"); // \t = tab
 		}
 		System.out.println(); //pulando a linha
 		sca.close(); //fechando o scanner de apoio
 		while(sc.hasNextLine()) { 
 			linha = sc.nextLine();
-			sca = new Scanner (linha);
+			sca = new Scanner (linha).useLocale(Locale.US);
 			sca.useDelimiter(";");
+			//imprimindo o nome
+			System.out.print(sca.next()+"\t");
+			//Imprimindo a idade
+			System.out.println(sca.nextInt()+"\t");
+			//imprimindo salario
+			System.out.println(sca.nextDouble());
+			//fechando scanner
+			sca.close();
+			
+			
+			
 			
 		}
 	}
