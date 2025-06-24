@@ -1,0 +1,13 @@
+package Aula06;
+
+public class Exemplo07 {
+
+	public static void main(String[] args) {
+		//erro de sitaxe
+		int x=1,y=2;
+		if (x==y) {
+			System.out.println("Aqui tem erro de sintaxe!");
+		}
+	}
+
+}
