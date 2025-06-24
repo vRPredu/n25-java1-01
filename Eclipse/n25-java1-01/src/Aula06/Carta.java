@@ -42,4 +42,20 @@ public class Carta {
 	private void setValor(int valor) {
 		this.valor = valor;
 	}
+	@Override
+	public String toString() {
+		
+		return super.toString();
+	}
 }
+
+
+┌───────────────┐
+│ A♠            │
+│               │
+│               │
+│     ♠         │
+│               │
+│               │
+│            A♠ │
+└───────────────┘
